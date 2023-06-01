@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Universitario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="contenedor header">
+    <h1>
+        Blog Universitario
+    </h1>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#categorias">Categorias</a></li>
+        <li><a href="#publicaciones">Publicaciones</a></li>
+        <li><a href="#contactenos">Contactos</a></li>
+    </ul>
+</div>
+
+
+<section class="descripcion">
+    <h2>Descripcion del blog</h2>
+    <p>Somos una comunidad en línea formada por jóvenes universitarios apasionados por compartir sus opiniones y perspectivas sobre diversos temas de interés. En este espacio, encontrarás debates animados, reflexiones profundas y análisis críticos sobre asuntos que nos afectan como estudiantes y miembros de la sociedad.
+
+        Nuestro objetivo principal es crear un ambiente inclusivo donde cada voz importa. Nos esforzamos por abordar temas relevantes para los jóvenes universitarios, como la educación, la cultura, la política, el medio ambiente, el entretenimiento y mucho más. Queremos que te sientas inspirado(a) para expresar tus ideas, debatir de manera respetuosa y aprender de las opiniones de tus compañeros.
+        
+        Aquí encontrarás artículos de jóvenes escritores que desafían las convenciones, comparten experiencias personales y presentan análisis informados. Además, fomentamos la participación activa de nuestros lectores a través de comentarios, encuestas y debates en nuestras secciones interactivas. Queremos que te sientas parte de nuestra comunidad y que tu voz se escuche.
+        
+        Únete a nosotros en este emocionante viaje de descubrimiento y diálogo. Explora nuestros artículos, comparte tus opiniones, interactúa con otros estudiantes y amplía tus horizontes. Juntos, podemos influir en el mundo que nos rodea y hacer oír nuestras voces en los asuntos que nos interesan.</p>
+
+        <img src="img/descripcion.jpg" alt="">
+</section>
+
+
+<section id="categorias">
+    <h2>Tema de Interes - Categorias</h2>
+
+    <div class="buscar_categoria">
+        <label for="">Busca una categoria: </label>
+        <input type="text" id="miBusqueda" onkeyup="interes()" placeholder="Buscar..." title="Escribe una categoria de interes">
+    </div>
+
+    <ul class="intereses" id="intereses">
+        <li><a href="#musica">Musica</a></li>
+        <li><a href="#programacion">Programacion</a></li>
+        <li><a href="#diseño">Diseño</a></li>
+        <li><a href="#deportes">Deportes</a></li>
+        <li><a href="#peliculas">Peliculas o Series</a></li>
+        <li><a href="#emprendimiento">Emprendimiento</a></li>
+        <li><a href="#videojuegos">Videojuegos</a></li>
+        <li><a href="#seguridad_informatica">Seguridad Informatica</a></li>
+        <li><a href="#experiencias_trabajo">Experiencias en Trabajos</a></li>
+        <li><a href="#ayuda_tecnologica">Ayuda Tecnologica</a></li>
+    </ul>
+</section>
+
+
+<section id="publicaciones">
+    <h2>Publicaciones</h2>
+<div class="crear_publicacion">
+    <div class="titulo_crear">
+        <h4>Crear publicacion</h4>
+    </div>
+    <div class="crear_nombre">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" id="nombres">
+    </div>
+    
+    <div class="descripcion">
+        <label>Descripcion: </label>
+        <textarea name="" id="descrip" cols="30" rows="10"></textarea>
+    </div>
+
+    <div class="categoria_escoger">
+        <label>Categoria:</label>
+    <select name="" id="categoria_seleccion">
+        <option value="musica">Musica</option>
+        <option value="programacion">Programacion</option>
+        <option value="diseño">Diseño</option>
+        <option value="deportes">Deportes</option>
+        <option value="peliculas">Peliculas</option>
+        <option value="emprendimiento">Emprendimiento</option>
+        <option value="videojuegos">Videojuegos</option>
+        <option value="seguridad informatica">Seguridad Informatica</option>
+        <option value="experiencias de trabajo">Experiencias de Trabajo</option>
+        <option value="ayuda tecnologica">Ayuda tecnologica</option>
+    </select>
+    </div>
+    
+    <div class="btn_crear">
+        <input type="submit" name="crear" value="publicar" id="btn_creacion">
+    </div>
+
+    <p id="error"></p>
+    <p id="exito"></p>
+    
+    
+</div>
+
+<div class="publicaciones_actuales">
+    <div id="musica">
+        <h4>Seccion de musica</h4>
+        
+    </div>
+    
+    <div id="programacion">
+        <h4>Seccion de programacion</h4>
+    </div>
+    
+    <div id="diseño">
+        <h4>Seccion de diseño</h4>
+    </div>
+    
+    <div id="deportes">
+        <h4>Seccion de deportes</h4>
+    </div>
+    
+    <div id="peliculas">
+        <h4>Seccion de peliculas o series</h4>
+    </div>
+    
+    <div id="emprendimiento">
+        <h4>Seccion de emprendimiento</h4>
+    </div>
+    
+    <div id="videojuegos">
+        <h4>Seccion de videojuegos</h4>
+    </div>
+    
+    
+    <div id="seguridad_informatica">
+        <h4>Seccion de seguridad informatica</h4>
+    </div>
+    
+    
+    <div id="experiencias_trabajo">
+        <h4>Seccion de experiencias en trabajos</h4>
+    </div>
+    
+    
+    <div id="ayuda_tecnologica">
+        <h4>Seccion de ayuda tecnologica</h4>
+    </div>
+</div>
+
+
+
+</section>
+
+
+<section id="contactenos">
+    <div>
+        <h4>Contactenos</h4>
+    </div>
+<div>
+    <label for="">Correo Electronico:</label>
+<input type="text" name="" id="correo" placeholder="Ingrese correo electronico porfavor">
+</div>
+<div>
+    <label for="">Contraseña:</label>
+<input type="password" name="" id="contra" placeholder="Ingrese su contraseña">
+</div>
+
+<div>
+    <input type="submit" class="enviar" onclick="enviar_correo()">
+</div>
+
+
+</section>
+
+
+<footer>
+    Todos los Derechos Reservados - Creado por Luis Cáceres Barrientos
+</footer>
+
+<script src="index.js"></script>
+
+
+
+</body>
+</html>
